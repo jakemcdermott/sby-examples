@@ -1,0 +1,11 @@
+---
+version: '2'
+services:
+  verification:
+    image: sby
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/sby
+    command: ["sby", "-f", "signals.sby", "memory.sby"]
