@@ -5,5 +5,5 @@
 #### Usage
 ```shell
 # run verification
-docker-compose run verification
+docker-compose up
 ```
