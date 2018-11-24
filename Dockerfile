@@ -49,5 +49,3 @@ RUN make
 RUN make install
 
 WORKDIR /sby
-
-ENTRYPOINT ["sby"]
