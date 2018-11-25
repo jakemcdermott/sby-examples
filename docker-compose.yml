@@ -17,3 +17,11 @@ services:
     volumes:
       - .:/sby
     command: ["sby", "-f", "signals.sby"]
+  alu:
+    image: sby
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/sby
+    command: ["sby", "-f", "alu.sby"]
