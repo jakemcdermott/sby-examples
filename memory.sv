@@ -20,7 +20,7 @@ module testbench (
     if (addr == test_addr) begin
       if (wen) begin
         test_data <= wdata;
-	test_data_valid <= 1;
+        test_data_valid <= 1;
       end
       if (test_data_valid) begin
         assert(test_data == rdata);
